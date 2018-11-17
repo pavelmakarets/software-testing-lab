@@ -1,0 +1,55 @@
+<!--
+ - Created by macaretsp on 9/12/2018.
+ -->
+
+<apex:page id="StudentsPage" controller="StudentPageController">
+    <apex:pageBlock title="Students Table">
+
+        <apex:pageBlockTable value="{!students}" var="student">
+
+            <apex:column>
+                <apex:facet name="header">First Name</apex:facet>
+                {!student.firstName}
+                <apex:facet name="footer">All Students</apex:facet>
+            </apex:column>
+
+            <apex:column>
+                <apex:facet name="header">Last Name</apex:facet>
+                {!student.lastName}
+            </apex:column>
+
+            <apex:column>
+                <apex:facet name="header">Group</apex:facet>
+                {!student.groupNumber}
+            </apex:column>
+
+            <apex:column>
+                <apex:facet name="header">OOP</apex:facet>
+                {!student.markOOP}
+            </apex:column>
+
+            <apex:column>
+                <apex:facet name="header">Web Programing</apex:facet>
+                {!student.markWeb}
+            </apex:column>
+
+            <apex:column>
+                <apex:facet name="header">System Programing</apex:facet>
+                {!student.markSys}
+            </apex:column>
+
+            <apex:column>
+                <apex:facet name="header">Administration</apex:facet>
+                {!student.markAdm}
+            </apex:column>
+
+            <apex:column>
+                <apex:facet name="header">Average Score</apex:facet>
+                {!student.avgScore}
+                <apex:facet name="footer">{!AvgScoreAllStudent}</apex:facet>
+            </apex:column>
+
+        </apex:pageBlockTable>
+
+    </apex:pageBlock>
+</apex:page>
