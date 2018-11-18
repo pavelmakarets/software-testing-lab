@@ -1,0 +1,29 @@
+﻿1. Выбор отелей в New York City для командировки по работе
+
+Последовательность действий: 
+◦ Зайти на сайт https://www.cheapoair.ca/
+◦ В главном меню выбрать вкладку HOTELS
+◦ Ввести в поле Destination город New York City (NYC), New York, United States
+◦ Ввести в поле Check-in дату 11/19/2018
+◦ Ввести в поле Check-out дату 1/1/2019
+◦ Нажать Search Now
+
+Ожидаемый результат: Список отелей
+Результат: ErrorMessage(Difference of Check-In and Check-Out dates can not be greater than 30 days!)
+
+2. Выбор отеля в Минске с 4 rooms, Free Breakfast, Gym, Bar
+
+Последовательность действий: 
+◦ Зайти на сайт https://www.cheapoair.ca/
+◦ В главном меню выбрать вкладку HOTELS
+◦ Ввести в поле Destination город Minsk, Belarus
+◦ Ввести в поле Check-in дату 11/19/2018
+◦ Ввести в поле Check-out дату 12/12/2018
+◦ Нажать Search Now
+◦ Установит checkbox Free Breakfast  в секции "What's Included"
+◦ Установит checkbox Gym  в секции "Amenities"
+◦ Установит checkbox Bar  в секции "Amenities"
+◦ В списке Room(s)/Guest(s) выбрать Rooms 4
+
+Ожидаемый результат: Список отелей мечты
+Результат: ErrorMessage(Your filter criteria did not match any results. Please modify your filter parameters and try again.)
